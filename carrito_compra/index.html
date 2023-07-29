@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diseño modal carrito de compras</title>
+
+        <!--Fuente de iconos-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="styles2.css"> <!-- Agrega tu archivo CSS personalizado aquí -->
+    </head>
+    <body>
+        <div class="container">
+            <div class="banner">
+                <img src="banner-interior.jpg" alt="">
+            </div>
+            <div class="title-bar">
+                <h1 class="title">Nuevos Productos</h1>
+            </div>
+            <div class="product-grid">
+                <div class="product-grid_item">
+                    <div class="product-grid_imagen">
+                        <img src="naranja.jpg" alt="">
+                    </div>
+                    <div class="product-grid_info">
+                        <p class="product-grid_name">Naranja</p>
+                        <p class="product-grid_price">$1.500 /Kg</p>
+                        <a href="#" class="product-grid_btn btn-default" onclick="addToCart('Naranja', 1500)"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="product-grid_item">
+                    <div class="product-grid_imagen">
+                        <img src="manzana.jpg" alt="">
+                    </div>
+                    <div class="product-grid_info">
+                        <p class="product-grid_name">Manzana</p>
+                        <p class="product-grid_price">$2.500 /Kg</p>
+                        <a href="#" class="product-grid_btn btn-default" onclick="addToCart('Manzana', 2500)"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="product-grid_item">
+                    <div class="product-grid_imagen">
+                        <img src="banano.jpg" alt="">
+                    </div>
+                    <div class="product-grid_info">
+                        <p class="product-grid_name">Banano</p>
+                        <p class="product-grid_price">$1.900 /Kg</p>
+                        <a href="#" class="product-grid_btn btn-default" onclick="addToCart('Banano', 1900)"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="product-grid_item">
+                    <div class="product-grid_imagen">
+                        <img src="Pera.jpg" alt="">
+                    </div>
+                    <div class="product-grid_info">
+                        <p class="product-grid_name">Pera</p>
+                        <p class="product-grid_price">$2.000 /Kg</p>
+                        <a href="#" class="product-grid_btn btn-default" onclick="addToCart('Pera', 2000)"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+                <!-- Sección de detalles del producto -->
+                <div class="product-details" id="product-details">
+                    <div class="product-details_info" id="product-details-info">
+                        <!-- Aquí se cargarán los detalles del producto seleccionado dinámicamente -->
+                    </div>
+                    <a href="#" class="back-to-products" id="back-to-products">Volver a la lista de productos</a>
+                </div>
+        
+                <script src="script.js"></script> <!-- Agrega tu archivo JS personalizado aquí -->
+    </body>
+</html>
+
