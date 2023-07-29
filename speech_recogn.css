@@ -1,0 +1,31 @@
+body {
+    background-color: #29323c;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    margin: 3rem;
+}
+
+#grabar {
+    padding: 9px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+}
+
+#notas {
+    margin: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
